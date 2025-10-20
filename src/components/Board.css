@@ -1,0 +1,49 @@
+.Board-container {
+    height: 270px;
+    width: 270px;
+    margin: auto;
+    background: linear-gradient(160deg, #9A5D40, #BD7F60, #CB8A67, #D2A991);
+    position: relative;
+    outline: solid 3px black
+}
+
+.Board-vertical-line {
+    height: 270px;
+    width: 1px;
+    background-color: black;
+    position: absolute
+}
+.Board-horizontal-line {
+    width: 270px;
+    height: 1px;
+    background-color: black;
+    position: absolute
+}
+.Board-point {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    transform-origin: center;
+    transform: translate(-14px, -14px);
+}
+.Board-point-black {}
+.Board-point-black:hover {
+    background: radial-gradient(circle at 30% 30%, #333, #000);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    opacity: 0.8;
+    cursor: pointer;
+}
+.Board-point-white {}
+.Board-point-white:hover {
+    background: radial-gradient(circle at 30% 30%, #fff, #ccc);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    opacity: 0.8;
+    cursor: pointer;
+}
+.Board-piece {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+}
