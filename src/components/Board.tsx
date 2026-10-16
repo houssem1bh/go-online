@@ -113,13 +113,13 @@ export default function Board() {
     }
     const getColor = (state: number): any => ({
     '-1': {
-      background: 'radial-gradient(circle at 30% 30%, #fff, #ccc)',
+      background: 'radial-gradient(circle at 30% 30%, #F9FAFB, #F9FAFB)',
       boxShadow: '0 2px 4px rgba(0,0,0,0.3)'
     }
 ,
     '0': {},
     '1': {
-        background: 'radial-gradient(circle at 30% 30%, #333, #000)',
+        background: 'radial-gradient(circle at 30% 30%, #2bd194, #2bd194)',
         boxShadow: '0 2px 4px rgba(0,0,0,0.4)'
     },
     }[String(state)] ?? '');

@@ -54,13 +54,13 @@ export const GoScoreTable: React.FC<GoScoreTableProps> = ({ scores, komi = 6.5 }
 
         <tbody>
           <tr>
-            <td style={tdStyle('left')}>⚫ Black</td>
+            <td style={tdStyle('left')}>🟢 Vert</td>
             <td style={tdStyle()}>{scores.black.territory}</td>
             <td style={tdStyle()}>{scores.black.captures}</td>
             <td style={tdStyle()}>{scores.black.total}</td>
           </tr>
           <tr>
-            <td style={tdStyle('left')}>⚪ White</td>
+            <td style={tdStyle('left')}>⚪ creme</td>
             <td style={tdStyle()}>{scores.white.territory}</td>
             <td style={tdStyle()}>{scores.white.captures}</td>
             <td style={tdStyle()}>{scores.white.total.toFixed(1)}</td>
